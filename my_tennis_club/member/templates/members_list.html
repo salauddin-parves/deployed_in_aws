@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for x in mymembers %}
+    <li>Name: {{ x.firstname }}  {{ x.lastname}}</li>
+    <p>Phone: {{x.phone}}</p>
+    <p>Join Date: {{ x.join_date|date:"Y-m-d" }}</p>
+    {% endfor %}
+
+    <p>Phone: {{mymembers.phone}}</p>
+    <p>Join Date: {{mymembers.join_date}}</p>
+</body>
+</html>
